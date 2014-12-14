@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 10
+    compileSdkVersion 19
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "net.henryhu.phoenix"
         minSdkVersion 10
-        targetSdkVersion 10
+        targetSdkVersion 19
     }
 
     buildTypes {
