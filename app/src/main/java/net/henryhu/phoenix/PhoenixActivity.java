@@ -168,7 +168,7 @@ public class PhoenixActivity extends Activity implements OnClickListener{
 
     void initTable() throws Exception {
     	transTable = new HashMap<Character, List<String>>();
-    	InputStream fs = getClass().getResourceAsStream("/trans_table.xml");
+    	InputStream fs = getAssets().open("trans_table.xml");
     	List<PhoneticPair> pairs = null;
     	try {
     		 pairs = new XmlReader().readXML(fs);
